@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infi Utrecht 2022 Jaardoel: Tech Events</title>
+    <style>
+      :root {
+        --foreground: rgb(18, 18, 28);
+        --theme-color-1: rgb(252, 185, 0);
+        --theme-color-2: rgb(207, 46, 46);
+        --theme-color-3: rgb(6, 147, 227);
+        --theme-color-4: rgb(139, 191, 53);
+      }
+      html, body {
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--foreground);
+      }
+      body {
+        padding-bottom: 20px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+      h1 { font-size: 2.0rem; background: var(--foreground); color: #fff; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; box-shadow: 0 4px 4px #aaa; }
+      h2 { font-size: 1.4rem; opacity: 0.75; font-weight: normal; padding: 0.25rem 1rem; }
+      h3 { font-size: 1.2rem; opacity: 0.5; }
+      h4 { font-size: 2.0rem; }
+      h5 { font-size: 1.2rem; }
+      h6 { font-size: 1.1rem; }
+      p {
+        margin: 0;
+      }
+      .jaar {
+        display: flex;
+        flex-direction: column;
+      }
+      .maanden {
+        display: flex;
+        background: silver;
+        min-height: 12rem;
+        position: relative;
+      }
+      .kwartaal:nth-of-type(1) .maanden { background-color: var(--theme-color-1); }
+      .kwartaal:nth-of-type(2) .maanden { background-color: var(--theme-color-2); }
+      .kwartaal:nth-of-type(3) .maanden { background-color: var(--theme-color-3); }
+      .kwartaal:nth-of-type(4) .maanden { background-color: var(--theme-color-4); }
+      .kwartaal + .kwartaal {
+        margin-top: 10px;
+      }
+      .kwartaal:nth-of-type(2n) {
+        margin-left: 100px;
+      }
+      .kwartaal:nth-of-type(2n + 1) {
+        margin-right: 100px;
+      }
+      .kwartaal:nth-of-type(2n) .maanden {
+        padding-right: 1rem;
+        color: #fff;
+      }
+      .kwartaal:nth-of-type(2n+1) .maanden {
+        box-shadow: inset -10px 10px 10px rgba(0, 0, 0, 0.1), inset 0 -10px 10px rgba(0, 0, 0, 0.1);
+      }
+      .kwartaal:nth-of-type(2n+0) .maanden {
+        box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.1), inset 0 -10px 10px rgba(0, 0, 0, 0.1);
+      }
+      .maand {
+        padding: 0.5rem 1rem ;
+        flex: 1;
+      }
+      @media (max-width: 1280px) {
+        .maanden {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jaar">
+      <h1>
+        Tech Events
+        <img src="https://infi.nl/app/themes/infi/dist/images/logo_infi.svg" style="height: 1.5rem;">
+        2022
+      </h1>
+      <div class="kwartaal">
+        <h2>Q1: Focus op Testing</h2>
+        <div class="maanden">
+          <div class="maand">
+            <h3>Januari</h3>
+            <h4>Tech Monthly ⚙️</h4>
+            <p>Overzicht van de nieuw opgezette codebase voor een <strong>Utrechtse klant</strong>, met focus op de front-end.</p>
+          </div>
+          <div class="maand">
+            <h3>Februari</h3>
+            <h4>Kennisdelingen 🏫</h4>
+            <p>Onder meer <strong>kennisdeling over BDD</strong>, maar ook wat <em>rust</em>. De lockdown en maatregelen verdwijnen langzaamaan, dus er zijn ook honderd andere dingen te doen.</p>
+          </div>
+          <div class="maand">
+            <h3>Maart</h3>
+            <h4>Workshop Testing 🧪</h4>
+            <p><strong>James Lyndsay</strong>, een expert op gebied van testing, gaat een remote workshop verzorgen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="kwartaal">
+        <h2>Q2: Focus op Security</h2>
+        <div class="maanden">
+          <div class="maand">
+            <h3>April</h3>
+            <h4>CSP middag 🔑</h4>
+            <p>We gaan al onze projecten evalueren op (mogelijk) gebruik van <strong>Content Security Policies</strong>, en achteraf Show & Tell-stijl de ervaringen delen.</p>
+          </div>
+          <div class="maand">
+            <h3>Mei</h3>
+            <h4>Tech Monthly ⚙️</h4>
+            <p>Speciefieke inhoud nader te bepalen, maar een team uit <strong>Amsterdam</strong> neemt ons mee op een tour door hun codebase.</p>
+          </div>
+          <div class="maand">
+            <h3>Juni</h3>
+            <h4>Security Training 🛡️</h4>
+            <p>We hebben ruimte vrij voor een <strong>training door een expert</strong>. Inhoud nog nader te bepalen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="kwartaal">
+        <h2>Q3: Focus op Cloud</h2>
+        <div class="maanden">
+          <div class="maand">
+            <h3>Juli</h3>
+            <h4>CIDR Gilde 👮</h4>
+            <p>We organiseren een intern event, hopelijk met hulp van ons eigen <strong>CIDR gilde</strong>. Inhoud to be decided.</p>
+          </div>
+          <div class="maand">
+            <h3>Augustus</h3>
+            <h4>Tech Monthly ⚙️</h4>
+            <p>Speciefieke inhoud nader te bepalen, maar een team uit <strong>Utrecht</strong> neemt ons mee op een tour door hun codebase.</p>
+          </div>
+          <div class="maand">
+            <h3>September</32>
+            <h4>Challenge Prep 🌥️</h4>
+            <p>We gaan een <strong>wedstrijd samenstellen</strong>: met een team een casus maken, waar in oktober drie verschillende uitwerkingen van verschillende teams voor moeten komen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="kwartaal">
+        <h2>Q4: Uitloop</h2>
+        <div class="maanden">
+          <div class="maand">
+            <h3>Oktober</h3>
+            <h4>Cloud Challenge 🌩️</h4>
+            <p><strong>Een wedstrijd!</strong> Drie teams gaan ieder in hun toegewezen Cloud Platform (Azure, Amazon, Google) met hulp van experts dezelfde casus oplossen. Wie levert het beste voorstel!?</p>
+          </div>
+          <div class="maand">
+            <h3>November</h3>
+            <h4>Tech Monthly ⚙️</h4>
+            <p>Speciefieke inhoud nader te bepalen, maar een <strong>Nijmeegs team</strong> neemt ons mee op een tour door hun codebase.</p>
+          </div>
+          <div class="maand">
+            <h3>December</h3>
+            <h4>Feestmaand! 🎄</h4>
+            <p>We kunnen er net zo goed van tevoren rekening mee houden: <strong>december is een feestmaand</strong>, en moeten we vrij houden voor de non-technische zaken in het leven.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
