@@ -5,6 +5,7 @@
     <style>
       :root {
         --foreground: rgb(18, 18, 28);
+        --foreground-dimmed: rgba(18, 18, 28, 0.7);
         --theme-color-1: rgb(252, 185, 0);
         --theme-color-2: rgb(207, 46, 46);
         --theme-color-3: rgb(6, 147, 227);
@@ -17,24 +18,23 @@
         line-height: 1.5;
         color: var(--foreground);
       }
-      body {
-        padding-bottom: 20px;
-      }
       * {
         box-sizing: border-box;
       }
       footer {
-        position: absolute;
-        bottom: 0;
-        opacity: 0.7;
+        margin-top: 10px;
         padding: 1rem;
         font-size: 0.8rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--foreground-dimmed);
+        position: sticky;
+        bottom: 0;
       }
       h1, h2, h3, h4, h5, h6 {
         margin: 0;
       }
       h1 { font-size: 2.0rem; background: var(--foreground); color: #fff; padding: 0.5rem; text-align: center; margin-bottom: 0.5rem; box-shadow: 0 4px 4px #aaa; }
-      h2 { font-size: 1.4rem; opacity: 0.75; font-weight: normal; padding: 0.25rem 1rem; }
+      h2 { font-size: 1.3rem; opacity: 0.75; font-weight: normal; padding: 0.25rem 1rem; }
       h3 { font-size: 1.1rem; opacity: 0.5; }
       h4 { font-size: 2.0rem; }
       h5 { font-size: 1.2rem; }
@@ -49,7 +49,7 @@
       .maanden {
         display: flex;
         background: silver;
-        min-height: 12rem;
+        min-height: 11rem;
         position: relative;
       }
       .kwartaal:nth-of-type(1) .maanden { background-color: var(--theme-color-1); }
@@ -76,7 +76,7 @@
         box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.1), inset 0 -10px 10px rgba(0, 0, 0, 0.1);
       }
       .maand {
-        padding: 1rem 2rem;
+        padding: 0.75rem 2rem;
         flex: 1;
       }
       @media (max-width: 1280px) {
@@ -124,7 +124,7 @@
           <div class="maand">
             <h3>mei</h3>
             <h4>Tech Monthly ⚙️ 020</h4>
-            <p>Speciefieke inhoud nader te bepalen, maar een team uit <strong>Amsterdam</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
+            <p>Een team uit <strong>Amsterdam</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
           </div>
           <div class="maand">
             <h3>juni</h3>
@@ -144,7 +144,7 @@
           <div class="maand">
             <h3>augustus</h3>
             <h4>Tech Monthly ⚙️ 030</h4>
-            <p>Speciefieke inhoud nader te bepalen, maar een team uit <strong>Utrecht</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
+            <p>Een team uit <strong>Utrecht</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
           </div>
           <div class="maand">
             <h3>september</32>
@@ -164,7 +164,7 @@
           <div class="maand">
             <h3>november</h3>
             <h4>Tech Monthly ⚙️ 024</h4>
-            <p>Speciefieke inhoud nader te bepalen, maar een <strong>Nijmeegs team</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
+            <p>Een <strong>Nijmeegs team</strong> neemt ons mee op een tour door hun codebase. In een Tech "Monthly" (naam is een historisch puntje) doen we een deep dive review van een van onze codebases.</p>
           </div>
           <div class="maand">
             <h3>december</h3>
