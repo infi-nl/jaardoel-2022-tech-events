@@ -76,8 +76,23 @@
         box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.1), inset 0 -10px 10px rgba(0, 0, 0, 0.1);
       }
       .maand {
+        position: relative;
         padding: 0.75rem 2rem;
         flex: 1;
+      }
+      .maand-override {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        padding: 0.75rem 2rem;
+        transform: rotate(-4deg);
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid black;;
+        color: var(--foreground-dimmed);
+        box-shadow: 2px 2px 8px var(--foreground-dimmed);
+        z-index: 100;
       }
       @media (max-width: 1280px) {
         .maanden {
@@ -148,8 +163,8 @@
           </div>
           <div class="maand">
             <h3>september</32>
-            <h4>Challenge Prep 🌥️</h4>
-            <p>We gaan een <strong>wedstrijd samenstellen</strong>: met een team een casus maken, waar in oktober drie verschillende uitwerkingen van verschillende teams voor moeten komen.</p>
+            <h4><del>Challenge Prep 🌥️</del></h4>
+            <p><del>We gaan een <strong>wedstrijd samenstellen</strong>: met een team een casus maken, waar in oktober drie verschillende uitwerkingen van verschillende teams voor moeten komen.</del></p>
           </div>
         </div>
       </div>
@@ -158,8 +173,13 @@
         <div class="maanden">
           <div class="maand">
             <h3>oktober</h3>
-            <h4>Cloud Challenge 🌩️</h4>
-            <p><strong>Een wedstrijd!</strong> Drie teams gaan ieder in hun toegewezen Cloud Platform (Azure, Amazon, Google) met hulp van experts dezelfde casus oplossen. Wie levert het beste voorstel!?</p>
+            <h4><del>Cloud Challenge 🌩️</del></h4>
+            <p><del><strong>Een wedstrijd!</strong> Drie teams gaan ieder in hun toegewezen Cloud Platform (Azure, Amazon, Google) met hulp van experts dezelfde casus oplossen. Wie levert het beste voorstel!?</del></p>
+            <div class="maand-override">
+              <h3>oktober</h3>
+              <h4>Infi-Con 2022 🎉</h4>
+              <p>Onze eigen <strong>mini-conferentie</strong> keert terug! En da's best veel werk en tijd, dus dat ging voor op het oorspronkelijke plan van een "Cloud Challenge". <a href="https://con.infi.nl/">https://con.infi.nl/</a></p>
+            </div>
           </div>
           <div class="maand">
             <h3>november</h3>
@@ -169,7 +189,7 @@
           <div class="maand">
             <h3>december</h3>
             <h4>Feestmaand! 🎄</h4>
-            <p>We kunnen er net zo goed van tevoren rekening mee houden: <strong>december is een feestmaand</strong>, en moeten we vrij houden voor de non-technische zaken in het leven.</p>
+            <p>We kunnen er net zo goed van tevoren rekening mee houden: <strong>december is een feestmaand</strong>, en moeten we vrij houden voor de non-technische zaken in het leven. (En natuurlijk AdventOfCode!)</p>
           </div>
         </div>
       </div>
